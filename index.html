@@ -6,35 +6,37 @@
     </head>
     <body>
         <div class="container">
+            
             <div class="dashboard">
+                <h2 style="color: rgb(10, 44, 54); text-align: center;">Welcome to My Calendar</h2>
                 <div class="selectDisplay">
                     <div id="displayYear">
                         <div> YEAR: 
-                            <span class="year"></span>
+                            <span id="lbl_year" class="year"></span>
                         </div>        
                     </div>
                     <div id="displayMonth">
                         <div> Month: 
-                            <span class="month"></span>
+                            <span id="lbl_month" class="month"></span>
                         </div>        
                     </div>
                 </div>
                 <div class="select">
-                    <select class="selectMonth">
-                        <option class="January" value="January">January</option>
-                        <option class="February" value="February">February</option>
-                        <option class="March" value="March">March</option>
-                        <option class="April" value="April">April</option>
-                        <option class="May" value="May">May</option>
-                        <option class="June" value="June">June</option>
-                        <option class="July" value="July">July</option>
-                        <option class="August" value="August">August</option>
-                        <option class="September" value="September">September</option>
-                        <option class="October" value="October">October</option>
-                        <option class="November" value="November">November</option>
-                        <option class="December" value="December">December</option>
+                    <select id="month-select" class="selectMonth">
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8" selected>September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
                     </select>
-                    <input class="inputYear">
+                    <input id="year-select" class="inputYear" value="2026" maxlength="4">
                 </div>
             </div>
 
@@ -42,17 +44,17 @@
             <table>
                 <thead>
                     <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
                     </tr>
                 </thead>
 
-                <tbody>
+                <tbody id="calendar-tbody">
                     <tr>
                         <td></td>
                         <td></td>

@@ -1,5 +1,5 @@
 body {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .container {
@@ -13,25 +13,56 @@ body {
 }
 
 .dashboard {
-    height: 50px;
+    box-sizing: border-box;
+    padding: 10px;
     background: url(./assets/dashboard.png);
     background-repeat: none;
     background-size: cover;
 }
 
+.select {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+
+.inputyear {
+    width: 50px;
+}
+
 table {
     width: 100%;
     height: 100px;
+    text-align: center;
 }
 
+
 thead {
-    background-color: gray;
+    background-color: lightgray;
+    font-size: 20px;
+    line-height: 100%;
+    height: 20px;
+    font-weight: 500;
 }
 
 tbody {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
-    font-weight: 400;
     letter-spacing: 0;
-    
+    background-color: white;
+}
+
+td {
+    height: 20px;
+    width: 50px;
+}
+
+td.old{
+    color: gray;
+}
+
+thead tr th:first-child,
+td:first-child
+ {
+    color:red;
 }
